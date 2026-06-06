@@ -1,0 +1,225 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all var(--transition-normal);
+  border-bottom: 1px solid transparent;
+  background: transparent;
+}
+
+.scrolled {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  padding: 0.25rem 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+  color: var(--fg-primary);
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 1px;
+}
+
+.desktopNav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+.navLink {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--fg-secondary);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navLink:hover {
+  color: var(--fg-primary);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-hero);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-normal);
+}
+
+.navLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.active {
+  color: var(--primary) !important;
+}
+
+.active::after {
+  transform: scaleX(1) !important;
+  background: var(--gradient-hero) !important;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.themeToggle {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  color: var(--fg-primary);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.themeToggle:hover {
+  background: var(--bg-tertiary);
+  transform: scale(1.05);
+  border-color: var(--border-medium);
+  box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.sunIcon, .moonIcon {
+  transition: transform 0.5s ease;
+}
+
+.themeToggle:hover .sunIcon {
+  transform: rotate(45deg);
+}
+
+.themeToggle:hover .moonIcon {
+  transform: rotate(-15deg);
+}
+
+/* Mobile Menu Button */
+.menuButton {
+  display: none;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: flex;
+  }
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18px;
+  height: 12px;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--fg-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.burgerActive span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.burgerActive span:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerActive span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* Mobile Drawer */
+.mobileDrawer {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 99;
+  overflow: hidden;
+  transition: height var(--transition-normal);
+  border-bottom: 0px solid transparent;
+}
+
+.drawerOpen {
+  height: calc(100vh - 70px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.mobileLink {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--fg-secondary);
+  transition: color var(--transition-fast);
+}
+
+.mobileLink:hover, .mobileActive {
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary-glow);
+}
