@@ -103,6 +103,14 @@ export default function Navbar() {
         </nav>
 
         <div className={styles.actions}>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.resumeBtn}
+          >
+            Resume
+          </a>
           <button
             onClick={toggleTheme}
             className={styles.themeToggle}
@@ -182,6 +190,15 @@ export default function Navbar() {
               </a>
             );
           })}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.mobileResumeBtn}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Resume
+          </a>
         </nav>
       </div>
     </header>
