@@ -33,7 +33,7 @@ const projectsData: Project[] = [
       "Implemented a Zero Trust Architecture (ZTA) featuring a 3-tier Role-Based Access Control (RBAC) system, Secondary Authentication verification, and SHA-256 cryptographic audit logs—resulting in zero security breaches."
     ],
     learned: "Building ShineGuard Hulo taught me how to securely orchestrate IoT hardware telemetry with web services under tight latency requirements and strict data integrity constraints.",
-    github: "https://github.com/SebastianArvinReyes/ShineGuard-Hulo", // Realistic links
+    github: "https://github.com/SebastianArvinReyes/ShineGuard-Hulo",
     demo: "#"
   },
   {
@@ -69,6 +69,40 @@ const projectsData: Project[] = [
     learned: "Working on Verisign honed my skills in enterprise-grade security protocols, cryptography integration, and designing bulletproof backend access verification points.",
     github: "#",
     demo: "#"
+  },
+  {
+    id: "malaya",
+    title: "Malaya",
+    category: "fullstack",
+    categoryLabel: "Full Stack",
+    summary: "A full-stack web application built to streamline workflows and deliver an intuitive digital experience, leveraging modern frameworks and database integrations.",
+    image: "/images/shineguard_hulo.png",
+    techStack: ["Node.js", "JavaScript", "MySQL", "PHP", "Git"],
+    highlights: [
+      "Designed and implemented a responsive, user-centric interface optimized for real-world usability.",
+      "Built robust back-end logic handling data management, authentication, and secure API communication.",
+      "Deployed and maintained the application with version control and collaborative development workflows."
+    ],
+    learned: "Malaya strengthened my ability to architect scalable full-stack systems end-to-end, balancing frontend UX with secure and efficient backend design.",
+    github: "#",
+    demo: "#"
+  },
+  {
+    id: "deltech",
+    title: "Deltech",
+    category: "fullstack",
+    categoryLabel: "Full Stack",
+    summary: "A full-stack technology platform designed to solve real-world problems with clean architecture, integrating multiple APIs and data sources into a seamless experience.",
+    image: "/images/sentinelai_qa.png",
+    techStack: ["JavaScript", "PHP", "MySQL", "Firebase JS SDK", "Chart.js"],
+    highlights: [
+      "Developed modular, maintainable code architecture following best practices for long-term scalability.",
+      "Integrated third-party APIs and data visualization libraries to enhance application insights and user value.",
+      "Implemented secure data handling and validation pipelines ensuring reliability and data integrity throughout."
+    ],
+    learned: "Deltech expanded my experience with API integrations and data-driven dashboards, sharpening my ability to build cohesive systems from multiple independent data sources.",
+    github: "#",
+    demo: "#"
   }
 ];
 
@@ -80,6 +114,7 @@ export default function Projects() {
     if (filter === "all") return true;
     if (filter === "iot") return project.category === "iot";
     if (filter === "aiqa") return project.category === "aiqa";
+    if (filter === "fullstack") return project.category === "fullstack";
     return true;
   });
 
@@ -99,6 +134,12 @@ export default function Projects() {
             className={`${styles.filterBtn} ${filter === "all" ? styles.activeFilter : ""}`}
           >
             All Projects
+          </button>
+          <button
+            onClick={() => setFilter("fullstack")}
+            className={`${styles.filterBtn} ${filter === "fullstack" ? styles.activeFilter : ""}`}
+          >
+            Full Stack
           </button>
           <button
             onClick={() => setFilter("iot")}

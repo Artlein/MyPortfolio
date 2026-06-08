@@ -21,7 +21,7 @@ const skillCategories = [
         <polyline points="8 6 2 12 8 18"></polyline>
       </svg>
     ),
-    skills: ["Java", "Next.js", "PHP", "JavaScript", "Python"],
+    skills: ["Java", "Node.js", "PHP", "JavaScript", "Python", "TailwindCSS"],
     colorClass: styles.cyanGlow,
   },
   {
@@ -42,7 +42,7 @@ const skillCategories = [
         <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
       </svg>
     ),
-    skills: ["MySQL", "Firebase Realtime DB"],
+    skills: ["MySQL", "Firebase Realtime DB", "Supabase"],
     colorClass: styles.indigoGlow,
   },
   {
@@ -64,16 +64,37 @@ const skillCategories = [
       </svg>
     ),
     skills: [
-      "2D Data Segmentation",
-      "Image Annotation",
-      "GenAI Text Evaluation",
-      "Data Validation",
-      "Compliance & Standards",
+      "2D Data Segmentation & Annotation",
+      "Quality Assurance & Data Review",
+      "Generative AI & Text Collection",
+      "Transcription & Language Processing",
+      "Data Validation and Compliance",
     ],
     colorClass: styles.pinkGlow,
   },
   {
-    title: "Tools & Architecture",
+    title: "Libraries & APIs",
+    icon: (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+        <path d="M2 17l10 5 10-5"></path>
+        <path d="M2 12l10 5 10-5"></path>
+      </svg>
+    ),
+    skills: ["Chart.js", "Leaflet.js", "TCPDF", "Firebase JS SDK", "Mailtrap API"],
+    colorClass: styles.pinkGlow,
+  },
+  {
+    title: "DevOps & Tools",
     icon: (
       <svg
         width="24"
@@ -92,11 +113,13 @@ const skillCategories = [
       </svg>
     ),
     skills: [
-      "Software Testing",
-      "QA Automation",
-      "Zero Trust Architecture (ZTA)",
-      "Role-Based Access Control (RBAC)",
-      "IoT (ESP32/Arduino)",
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "GitHub",
+      "Git Bash",
+      "XAMPP",
+      "Software Testing & QA Automation",
     ],
     colorClass: styles.yellowGlow,
   },
