@@ -37,7 +37,7 @@ const projectsData: Project[] = [
       "Integrated a Zero Trust Architecture (ZTA) security framework enforcing a 3-tier RBAC system, secondary authentication verification (SBA), and SHA-256 cryptographic audit logs — resulting in zero security breaches.",
     ],
     learned: "Building ShineGuard Hulo taught me how to securely orchestrate IoT hardware telemetry with web services under tight latency requirements and strict data integrity constraints.",
-    github: "https://github.com/Artlein",
+    github: "https://github.com/Artlein/ShineGuard.git",
     demo: "#",
   },
   {
@@ -55,7 +55,7 @@ const projectsData: Project[] = [
       "Handled core backend operations for authentication, cart management, and order tracking, along with a rule-based automated chat support feature, automated PDF receipt generation, QR code integration for order verification, and an admin dashboard for managing products and orders.",
     ],
     learned: "Deltech sharpened my PHP backend architecture skills and deepened my understanding of building cohesive e-commerce flows — from cart to checkout to admin management.",
-    github: "https://github.com/Artlein",
+    github: "https://github.com/Artlein/Deltech.git",
     demo: "#",
   },
   {
@@ -73,7 +73,7 @@ const projectsData: Project[] = [
       "Built a financial tracking module with full CRUD functionality that auto-calculated budgets, actuals, taxes, and variances, backed by an interactive Chart.js dashboard and secured with role-based session guards and SQL prepared statements.",
     ],
     learned: "Malaya strengthened my ability to design data-driven financial interfaces end-to-end, balancing frontend chart UX with secure and efficient backend SQL design.",
-    github: "https://github.com/Artlein",
+    github: "https://github.com/Artlein/Malaya.git",
     demo: "#",
   },
 
