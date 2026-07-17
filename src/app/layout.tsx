@@ -25,15 +25,15 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sebastian Arvin P. Reyes | Full-Stack Developer & AI QA Auditor",
+  title: "Sebastian Arvin P. Reyes | Full Stack Developer & Data Engineering",
   description:
-    "Portfolio of Sebastian Arvin P. Reyes (Vin), a Full-Stack Developer, AI Quality Auditor, and Data Specialist based in Muntinlupa City, Philippines. Developer of ShineGuard Hulo Smart Streetlight & Security IoT Portal. Dean's Lister, University of Makati 2022–2026.",
-  authors: [{ name: "Sebastian Arvin P. Reyes", url: "https://linkedin.com/in/sebastian-arvin-reyes" }],
+    "Portfolio of Sebastian Arvin P. Reyes (Vin), a Full Stack Developer and Data Engineering specialist based in Muntinlupa City, Philippines. Developer of ShineGuard Hulo Smart Streetlight & Security IoT Portal. Dean's Lister, University of Makati 2022–2026.",
+  authors: [{ name: "Sebastian Arvin P. Reyes", url: "https://www.linkedin.com/in/sebastian-arvin-reyes-/" }],
   keywords: [
     "Sebastian Arvin P. Reyes",
     "Vin Reyes",
-    "Full-Stack Developer",
-    "AI QA Auditor",
+    "Full Stack Developer",
+    "Data Engineering",
     "Data Specialist",
     "IoT Developer",
     "Zero Trust Architecture",
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     "Remotasks",
   ],
   openGraph: {
-    title: "Sebastian Arvin P. Reyes | Full-Stack Developer & AI QA Auditor",
-    description: "Portfolio of Sebastian Arvin P. Reyes — Full-Stack Developer, AI QA Auditor, and Data Specialist based in the Philippines.",
+    title: "Sebastian Arvin P. Reyes | Full Stack Developer & Data Engineering",
+    description: "Portfolio of Sebastian Arvin P. Reyes — Full Stack Developer and Data Engineering specialist based in the Philippines.",
     type: "website",
     url: "https://arvinreyes.vercel.app",
   },

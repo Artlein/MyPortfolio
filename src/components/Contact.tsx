@@ -78,7 +78,7 @@ export default function Contact() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/in/sebastian-arvin-reyes"
+                href="https://www.linkedin.com/in/sebastian-arvin-reyes-/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.detailRow}
@@ -101,7 +101,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className={styles.label}>Connect on LinkedIn</span>
-                  <span className={styles.value}>linkedin.com/in/sebastian-arvin-reyes</span>
+                  <span className={styles.value}>linkedin.com/in/sebastian-arvin-reyes-</span>
                 </div>
               </a>
 
