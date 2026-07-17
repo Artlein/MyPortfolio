@@ -7,36 +7,49 @@ const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const outfit = Outfit({
   variable: "--font-heading",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "600", "700", "800"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
   title: "Sebastian Arvin P. Reyes | Full-Stack Developer & AI QA Auditor",
-  description: "Portfolio of Sebastian Arvin P. Reyes (Vin), a Full-Stack Developer and AI Quality Auditor based in Muntinlupa City, Philippines. Developer of ShineGuard Hulo Smart Streetlight & Security IoT Portal.",
+  description:
+    "Portfolio of Sebastian Arvin P. Reyes (Vin), a Full-Stack Developer, AI Quality Auditor, and Data Specialist based in Muntinlupa City, Philippines. Developer of ShineGuard Hulo Smart Streetlight & Security IoT Portal. Dean's Lister, University of Makati 2022–2026.",
   authors: [{ name: "Sebastian Arvin P. Reyes", url: "https://linkedin.com/in/sebastian-arvin-reyes" }],
   keywords: [
     "Sebastian Arvin P. Reyes",
     "Vin Reyes",
     "Full-Stack Developer",
     "AI QA Auditor",
+    "Data Specialist",
     "IoT Developer",
     "Zero Trust Architecture",
     "Muntinlupa City",
     "Philippines",
     "ShineGuard Hulo",
-    "University of Makati"
+    "University of Makati",
+    "Benchmark Valuers",
+    "Remotasks",
   ],
+  openGraph: {
+    title: "Sebastian Arvin P. Reyes | Full-Stack Developer & AI QA Auditor",
+    description: "Portfolio of Sebastian Arvin P. Reyes — Full-Stack Developer, AI QA Auditor, and Data Specialist based in the Philippines.",
+    type: "website",
+    url: "https://arvinreyes.vercel.app",
+  },
 };
 
 export default function RootLayout({
@@ -52,6 +65,7 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider>
+          <div className="noise-overlay"></div>
           {children}
         </ThemeProvider>
       </body>

@@ -14,7 +14,7 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
   padding: 0.25rem 0;
 }
 
@@ -233,14 +233,14 @@
   font-weight: 600;
   transition: all var(--transition-fast);
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
   display: inline-flex;
   align-items: center;
 }
 
 .resumeBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -264,5 +264,5 @@
 
 .mobileResumeBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
 }
