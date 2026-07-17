@@ -134,15 +134,20 @@ export default function About() {
             <p>
               I am a forward-thinking IT graduate from the{" "}
               <strong>University of Makati</strong> (Class of 2026, Dean&apos;s Lister) who thrives at the
-              intersection of full-stack engineering, data pipeline architecture, and secure systems design.
-              Most recently, I served as a <strong>Web Developer &amp; Data Specialist Intern</strong> at{" "}
-              <strong>Benchmark Valuers and Credit Solutions Inc.</strong>, developing their company website and
-              managing property data workflows.
+              intersection of full-stack engineering and data pipeline architecture.
             </p>
             <p>
-              My hands-on experience spanning full-stack development, IoT systems, and AI data pipelines has
-              sharpened my ability to build robust, data-driven solutions end-to-end — from database schema
-              design and SQL querying to frontend dashboards and scalable backend services.
+              My hands-on experience spans full-stack development and data pipeline design — sharpening my
+              ability to build robust, data-driven solutions end-to-end: from database schema design and SQL
+              querying, through ETL/data transformation logic, to frontend dashboards and scalable backend
+              services.
+            </p>
+            <p>
+              On the full-stack side, I work across the stack with <strong>Java</strong> as my primary
+              language, alongside <strong>PHP</strong>, <strong>JavaScript</strong>, and{" "}
+              <strong>React</strong>, backed by <strong>MySQL</strong> for relational data and{" "}
+              <strong>Firebase/Supabase</strong> for lighter-weight backends — building applications that
+              hold up from the database layer to the UI.
             </p>
 
             {/* Education card */}
