@@ -106,7 +106,7 @@ const projectsData: Project[] = [
     dateRange: "Sept 2024 – Dec 2024",
     summary: "A responsive enterprise-grade accounting and resource-planning application featuring custom Java API handlers, React frontend dashboard analytics, payroll tracking, and live Supabase PostgreSQL synchronization.",
     image: "/images/malaya_solar.png",
-    images: ["/images/malaya_solar.png", "/images/malaya_solar_login.png", "/images/malaya_solar_2.png"],
+    images: ["/images/malaya_solar.png", "/images/malaya_solar_login.png"],
     techStack: ["Java (HTTP Server)", "React (Vite)", "PostgreSQL (Supabase)", "CSS3", "JWT Auths"],
     highlights: [
       "Developed a responsive accounting and resource-planning application using React, Java HTTP Server, and Supabase PostgreSQL, improving project cost visibility and workflow management.",
