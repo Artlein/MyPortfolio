@@ -74,11 +74,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`${styles.header} ${isScrolled ? styles.scrolled : ""} ${
-        mobileMenuOpen ? styles.menuOpen : ""
-      }`}
+      className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
     >
-      <div className={`${styles.container} container`}>
+      <div className={`${styles.navInner}`}>
+        {/* Logo */}
         <a href="#home" onClick={(e) => handleNavClick(e, "#home")} className={styles.logo}>
           <span>V</span>IN.DEV
         </a>
@@ -92,9 +91,7 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className={`${styles.navLink} ${
-                  activeSection === id ? styles.active : ""
-                }`}
+                className={`${styles.navLink} ${activeSection === id ? styles.active : ""}`}
               >
                 {item.label}
               </a>
@@ -102,6 +99,7 @@ export default function Navbar() {
           })}
         </nav>
 
+        {/* Actions */}
         <div className={styles.actions}>
           <a
             href="/resume.pdf"
@@ -117,18 +115,7 @@ export default function Navbar() {
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
           >
             {theme === "dark" ? (
-              // Sun Icon
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={styles.sunIcon}
-              >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={styles.sunIcon}>
                 <circle cx="12" cy="12" r="5"></circle>
                 <line x1="12" y1="1" x2="12" y2="3"></line>
                 <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -140,18 +127,7 @@ export default function Navbar() {
                 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
               </svg>
             ) : (
-              // Moon Icon
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={styles.moonIcon}
-              >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={styles.moonIcon}>
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
               </svg>
             )}
@@ -182,9 +158,7 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className={`${styles.mobileLink} ${
-                  activeSection === id ? styles.mobileActive : ""
-                }`}
+                className={`${styles.mobileLink} ${activeSection === id ? styles.mobileActive : ""}`}
               >
                 {item.label}
               </a>
