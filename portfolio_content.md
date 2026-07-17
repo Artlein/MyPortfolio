@@ -49,11 +49,11 @@ My professional experience as an EQC QA Auditor at Remotasks has trained my eye 
 - Built authentication, cart management, order tracking, automated chat support, PDF receipts, QR verification, and admin dashboard.
 
 ### Malaya Solar Accounting System
-- **Role**: Backend Developer
+- **Role**: Full-Stack Developer
 - **Duration**: Sept 2024 – Dec 2024
-- **Tech Stack**: PHP, SQL, Vanilla JavaScript, Bootstrap 5, Chart.js
-- Developed a responsive accounting and resource-planning application improving project cost visibility for client contracts.
-- Built a financial tracking module with full CRUD, auto-calculated budgets/actuals/taxes/variances, Chart.js dashboard, role-based session guards, SQL prepared statements.
+- **Tech Stack**: Java (HTTP Server), React, PostgreSQL (Supabase), CSS3, JWT Auths
+- Developed a responsive accounting and resource-planning application using React, Java, and Supabase PostgreSQL, improving project cost visibility and workflow management.
+- Built a financial tracking module with full CRUD, auto-calculated budgets/actuals/taxes/variances, interactive dashboard analytics, role-based token guards, SQL prepared statements.
 
 ---
 

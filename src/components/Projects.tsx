@@ -65,18 +65,17 @@ const projectsData: Project[] = [
     category: "data",
     categoryLabel: "Data Engineering",
     dateRange: "Sept 2024 – Dec 2024",
-    summary: "A responsive accounting and resource-planning application for solar client contracts, featuring a Chart.js financial dashboard with budget tracking, tax calculations, and role-based session security.",
+    summary: "A responsive enterprise-grade accounting and resource-planning application featuring custom Java API handlers, React frontend dashboard analytics, payroll tracking, and live Supabase PostgreSQL synchronization.",
     image: "/images/malaya_solar.png",
-    techStack: ["PHP", "SQL", "Vanilla JavaScript", "Bootstrap 5", "Chart.js"],
+    techStack: ["Java (HTTP Server)", "React (Vite)", "PostgreSQL (Supabase)", "CSS3", "JWT Auths"],
     highlights: [
-      "Developed a responsive accounting and resource-planning application using PHP, SQL, Vanilla JavaScript, and Bootstrap 5, improving project cost visibility and workflow management for client contracts.",
-      "Built a financial tracking module with full CRUD functionality that auto-calculated budgets, actuals, taxes, and variances, backed by an interactive Chart.js dashboard and secured with role-based session guards and SQL prepared statements.",
+      "Developed a responsive accounting and resource-planning application using React, Java HTTP Server, and Supabase PostgreSQL, improving project cost visibility and workflow management.",
+      "Built a financial tracking module with full CRUD functionality that auto-calculated budgets, actuals, taxes, and variances, backed by an interactive dashboard and secured with custom token guards and prepared statements.",
     ],
     learned: "Malaya strengthened my ability to design data-driven financial interfaces end-to-end, balancing frontend chart UX with secure and efficient backend SQL design.",
     github: "https://github.com/Artlein/Malaya.git",
     demo: "#",
-  },
-
+  }
 ];
 
 export default function Projects() {
