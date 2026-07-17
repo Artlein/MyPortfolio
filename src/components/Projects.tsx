@@ -68,7 +68,8 @@ const projectsData: Project[] = [
     categoryLabel: "IoT & Security",
     dateRange: "Nov 2025 – May 2026",
     summary: "A smart streetlighting and security IoT portal connecting 32 physical hardware nodes to a real-time municipal dashboard with cryptographic audit logging.",
-    image: "/images/shineguard_hulo.png",
+    image: "/images/shineguard_login.png",
+    images: ["/images/shineguard_login.png", "/images/shineguard_map.png", "/images/shineguard_iot.png"],
     techStack: ["PHP", "MySQL", "Firebase Realtime DB", "JavaScript", "ESP32", "Arduino", "SHA-256", "AWS EC2"],
     highlights: [
       "Developed an IoT hardware streetlight monitoring system managing 32 physical nodes, integrating ESP32/Arduino microcontrollers with real-time telemetry data.",
