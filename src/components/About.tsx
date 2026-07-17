@@ -152,11 +152,14 @@ export default function About() {
 
             {/* Education card */}
             <div className={styles.educationCard}>
-              <div className={styles.eduIcon}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                  <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
-                </svg>
+              <div className={styles.eduIcon} style={{ background: "transparent", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", borderRadius: "50%", padding: 0 }}>
+                <Image
+                  src="/images/umak_logo.png"
+                  alt="University of Makati"
+                  width={48}
+                  height={48}
+                  style={{ objectFit: "cover" }}
+                />
               </div>
               <div className={styles.eduDetails}>
                 <h4>Bachelor of Science in Information Technology</h4>

@@ -29,10 +29,13 @@ const timelineData: TimelineEvent[] = [
       "Sourced, organized, and validated comparable property data for land appraisal valuations, ensuring data accuracy and consistency across Excel and database records.",
     ],
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-      </svg>
+      <Image
+        src="/images/benchmark_logo.png"
+        alt="Benchmark Valuers"
+        width={34}
+        height={34}
+        style={{ borderRadius: "50%", objectFit: "cover" }}
+      />
     ),
     accentColor: "#06b6d4",
   },
@@ -48,11 +51,13 @@ const timelineData: TimelineEvent[] = [
       "Coordinated with cross-functional teams to enforce data quality standards across large-scale AI training projects, helping the team sustain consistent output quality across multiple concurrent projects.",
     ],
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-        <line x1="12" y1="22.08" x2="12" y2="12"></line>
-      </svg>
+      <Image
+        src="/images/remotasks_logo.png"
+        alt="Remotasks"
+        width={34}
+        height={34}
+        style={{ borderRadius: "50%", objectFit: "cover" }}
+      />
     ),
     accentColor: "#8b5cf6",
   },
