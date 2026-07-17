@@ -8,7 +8,7 @@ interface Project {
   id: string;
   title: string;
   subtitle: string;
-  category: "fullstack" | "iot" | "aiqa";
+  category: "fullstack" | "iot" | "data";
   categoryLabel: string;
   dateRange: string;
   summary: string;
@@ -76,25 +76,7 @@ const projectsData: Project[] = [
     github: "https://github.com/Artlein",
     demo: "#",
   },
-  {
-    id: "sentinelai",
-    title: "SentinelAI QA",
-    subtitle: "Data Compliance & Automation Review",
-    category: "aiqa",
-    categoryLabel: "AI & Data QA",
-    dateRange: "2022 – 2026",
-    summary: "An automated data review and compliance pipeline dashboard built for auditing large-scale AI annotations, 2D segmentation bounding boxes, and robotic datasets.",
-    image: "/images/sentinelai_qa.png",
-    techStack: ["Python", "QA Automation", "Data Validation", "Selenium", "Jenkins"],
-    highlights: [
-      "Audited complex quality assurance and data validation workflows for large-scale AI 2D annotation and robotics datasets, ensuring 100% compliance with client specifications.",
-      "Coordinated across cross-functional annotation teams to enforce global standards, improving model training accuracy and consistency.",
-      "Formulated automation feedback loops and resolved edge-case anomalies, sustaining consistent output quality across multiple concurrent machine learning datasets.",
-    ],
-    learned: "This experience deepened my understanding of data cleaning pipelines and QA automation, reinforcing the critical role of data integrity in building accurate machine learning models.",
-    github: "#",
-    demo: "#",
-  },
+
 ];
 
 export default function Projects() {
@@ -124,7 +106,7 @@ export default function Projects() {
     { key: "all", label: "All Projects" },
     { key: "fullstack", label: "Full Stack" },
     { key: "iot", label: "IoT & Security" },
-    { key: "aiqa", label: "AI & Data QA" },
+    { key: "data", label: "Data Engineering" },
   ];
 
   return (

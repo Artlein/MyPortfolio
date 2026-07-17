@@ -50,10 +50,6 @@ export default function Hero() {
       <div className={`${styles.container} container`}>
         {/* Left — Text Content */}
         <div className={styles.content}>
-          <div className={`${styles.introBadge} reveal`}>
-            <span className={styles.dot}></span>
-            Available for Opportunities
-          </div>
 
           <h1 className={`${styles.title} reveal reveal-delay-1`}>
             Hi, I&apos;m{" "}
@@ -61,8 +57,8 @@ export default function Hero() {
           </h1>
 
           <h2 className={`${styles.subtitle} reveal reveal-delay-2`}>
-            Full-Stack Developer &amp;{" "}
-            <span className={styles.highlight}>AI Quality Auditor</span>
+            Full Stack Developer &amp;{" "}
+            <span className={styles.highlight}>Data Engineering</span>
           </h2>
 
           <p className={`${styles.bio} reveal reveal-delay-3`}>
@@ -161,12 +157,12 @@ export default function Hero() {
             <div className={styles.terminalBody}>
               <pre className={styles.codeSnippet}>
                 <code>
-{`{
+                  {`{
   "name": "Sebastian Arvin",
   "alias": "Vin",
   "role": [
     "Full Stack Developer",
-    "AI QA Auditor"
+    "Data Engineering"
   ],
   "stack": [
     "Java", "PHP", "JavaScript",

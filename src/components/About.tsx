@@ -115,7 +115,7 @@ export default function About() {
               </div>
               <div className={styles.profileInfo}>
                 <h3 className={styles.profileName}>Sebastian Arvin P. Reyes</h3>
-                <p className={styles.profileRole}>Full-Stack Developer · AI QA Auditor</p>
+                <p className={styles.profileRole}>Full Stack Developer · Data Engineering</p>
                 <span className={styles.profileLocation}>
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -127,23 +127,22 @@ export default function About() {
             </div>
 
             <h3 className={styles.subheading}>
-              Crafting code with an{" "}
-              <span className="gradient-text">auditor&apos;s precision</span>.
+              Building scalable systems with{" "}
+              <span className="gradient-text">engineering precision</span>.
             </h3>
 
             <p>
               I am a forward-thinking IT graduate from the{" "}
               <strong>University of Makati</strong> (Class of 2026, Dean&apos;s Lister) who thrives at the
-              intersection of full-stack engineering, secure systems architecture, and artificial intelligence.
-              Most recently, I served as a <strong>Web Developer & Data Specialist Intern</strong> at{" "}
+              intersection of full-stack engineering, data pipeline architecture, and secure systems design.
+              Most recently, I served as a <strong>Web Developer &amp; Data Specialist Intern</strong> at{" "}
               <strong>Benchmark Valuers and Credit Solutions Inc.</strong>, developing their company website and
               managing property data workflows.
             </p>
             <p>
-              My professional experience as an EQC QA Auditor at Remotasks has trained my eye to spot
-              microscopic anomalies in complex datasets — a precision I bring directly into my development
-              process. From designing Zero Trust IoT systems to building accounting dashboards, I focus on
-              robust, secure, and scalable solutions.
+              My hands-on experience spanning full-stack development, IoT systems, and AI data pipelines has
+              sharpened my ability to build robust, data-driven solutions end-to-end — from database schema
+              design and SQL querying to frontend dashboards and scalable backend services.
             </p>
 
             {/* Education card */}

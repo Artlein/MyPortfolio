@@ -39,13 +39,17 @@ export default function Contact() {
         <div className={styles.contentGrid}>
           {/* Information & Socials */}
           <div className={styles.infoCol}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(6,182,212,0.12)", border: "1px solid rgba(6,182,212,0.3)", borderRadius: "999px", padding: "6px 14px", marginBottom: "1.25rem", fontSize: "0.8rem", fontWeight: 600, color: "#06b6d4", letterSpacing: "0.04em" }}>
+              <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#06b6d4", boxShadow: "0 0 6px #06b6d4", animation: "pulse 2s ease-in-out infinite", display: "inline-block", flexShrink: 0 }}></span>
+              Open to Opportunities
+            </div>
             <h3 className={styles.ctaHeading}>
-              Let&apos;s build something <span className="gradient-text">secure and intelligent</span>.
+              Let&apos;s build something <span className="gradient-text">impactful together</span>.
             </h3>
             <p className={styles.ctaText}>
-              Looking for a developer with an auditor&apos;s precision?
-              Whether you have a full-stack, security-centric, or AI data pipeline role,
-              let&apos;s connect to discuss how we can build robust applications together.
+              Looking for a Full Stack Developer with a strong data engineering foundation?
+              Whether it&apos;s a web application, data pipeline, or end-to-end system,
+              let&apos;s connect and build something great.
             </p>
 
             <div className={styles.contactDetails}>
