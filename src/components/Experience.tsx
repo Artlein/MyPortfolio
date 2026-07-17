@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 import styles from "./Experience.module.css";
 
 interface TimelineEvent {
@@ -68,10 +69,13 @@ const timelineData: TimelineEvent[] = [
       "Integrated Zero Trust Architecture, 3-tier Role-Based Access Control, and SHA-256 cryptographic audit logs into the capstone web portal.",
     ],
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
-      </svg>
+      <Image
+        src="/images/umak_logo.png"
+        alt="University of Makati"
+        width={34}
+        height={34}
+        style={{ borderRadius: "50%", objectFit: "cover" }}
+      />
     ),
     accentColor: "#3b82f6",
   },
