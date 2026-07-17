@@ -13,11 +13,50 @@ interface Project {
   dateRange: string;
   summary: string;
   image: string;
+  images?: string[];
   techStack: string[];
   highlights: string[];
   learned: string;
   github?: string;
   demo?: string;
+}
+
+interface ProjectImageProps {
+  image: string;
+  images?: string[];
+  title: string;
+  priority: boolean;
+}
+
+function ProjectImage({ image, images, title, priority }: ProjectImageProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const imageList = images && images.length > 0 ? images : [image];
+
+  useEffect(() => {
+    if (imageList.length <= 1) return;
+
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % imageList.length);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [imageList]);
+
+  return (
+    <>
+      {imageList.map((imgSrc, idx) => (
+        <Image
+          key={imgSrc}
+          src={imgSrc}
+          alt={`${title} - view ${idx + 1}`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className={`${styles.projectImage} ${idx === currentIndex ? styles.visibleImage : styles.hiddenImage}`}
+          priority={priority && idx === 0}
+        />
+      ))}
+    </>
+  );
 }
 
 const projectsData: Project[] = [
@@ -67,6 +106,7 @@ const projectsData: Project[] = [
     dateRange: "Sept 2024 – Dec 2024",
     summary: "A responsive enterprise-grade accounting and resource-planning application featuring custom Java API handlers, React frontend dashboard analytics, payroll tracking, and live Supabase PostgreSQL synchronization.",
     image: "/images/malaya_solar.png",
+    images: ["/images/malaya_solar.png", "/images/malaya_solar_login.png", "/images/malaya_solar_2.png"],
     techStack: ["Java (HTTP Server)", "React (Vite)", "PostgreSQL (Supabase)", "CSS3", "JWT Auths"],
     highlights: [
       "Developed a responsive accounting and resource-planning application using React, Java HTTP Server, and Supabase PostgreSQL, improving project cost visibility and workflow management.",
@@ -135,12 +175,10 @@ export default function Projects() {
             >
               {/* Image */}
               <div className={styles.imageWrapper}>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className={styles.projectImage}
+                <ProjectImage
+                  image={project.image}
+                  images={project.images}
+                  title={project.title}
                   priority={project.id === "shineguard"}
                 />
                 <div className={styles.imageMeta}>
