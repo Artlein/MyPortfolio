@@ -39,7 +39,7 @@ const skillCategories = [
         <line x1="6" y1="20" x2="6" y2="14"></line>
       </svg>
     ),
-    skills: ["SQL", "Excel", "Chart.js","Node.js", "Quality Assurance & Validation", "Dataset Annotation & Labeling"],
+    skills: ["SQL", "Excel", "Chart.js", "Quality Assurance & Validation", "Dataset Annotation & Labeling"],
     colorClass: styles.pinkGlow,
     accent: "#8b5cf6",
   },
@@ -52,7 +52,7 @@ const skillCategories = [
         <path d="M2 12l10 5 10-5"></path>
       </svg>
     ),
-    skills: ["React", "Chart.js", "Leaflet.js", "Firebase JS SDK", "Bootstrap 5"],
+    skills: ["React", "Chart.js",,"Node.js", "Leaflet.js", "Firebase JS SDK", "Bootstrap 5"],
     colorClass: styles.cyanGlow,
     accent: "#06b6d4",
   },
