@@ -39,7 +39,7 @@ const skillCategories = [
         <line x1="6" y1="20" x2="6" y2="14"></line>
       </svg>
     ),
-    skills: ["SQL", "Excel", "Chart.js", "Quality Assurance & Validation", "Dataset Annotation & Labeling"],
+    skills: ["SQL", "Excel", "Chart.js","Node.js", "Quality Assurance & Validation", "Dataset Annotation & Labeling"],
     colorClass: styles.pinkGlow,
     accent: "#8b5cf6",
   },
